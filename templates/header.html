@@ -1,0 +1,9 @@
+<header>
+		<div class="d-flex p-2 bg-danger align-items-center">
+			<h5 class="text-white font-weight-bold">MyData</h5>
+			<div class="ml-auto d-flex align-items-center">
+				<img src="{{url_for ('static', filename = 'img/avatar.png')}}" class="rounded-circle" width="50" height="50" /><br>
+				<h6 class="ml-2 text-white">Mr. {{current_user.name}}</h6>
+			</div>
+		</div>
+	</header>

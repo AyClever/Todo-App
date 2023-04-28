@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% include 'header.html' %}
+	<main class="mt-3 col-md-9 mx-auto">
+		{% include 'nav.html' %}
+		<section class="">
+			<div class="card col-md-6 mx-auto">
+				<div class="card-body">
+					<h5 class="text-center font-weight-bold">User Record</h5>
+					<hr/>
+						<ul class="list-unstyled m-0">
+								<li class="d-block mt-2">
+									<label class="font-weight-bold m-0">Name</label>
+									<p class="m-0">{{ records.name }}</p>
+								</li>
+								<li class="d-block mt-2">
+									<label class="font-weight-bold m-0">Email</label>
+									<p class="m-0">{{ records.email }}</p>
+								</li>
+								<li class="d-block mt-2">
+									<label class="font-weight-bold m-0">Phone number</label>
+									<p class="m-0">{{ records.phone_number }}</p>
+								</li>
+								<li class="d-block mt-2">
+									<label class="font-weight-bold m-0">Date of birth</label>
+									<p class="m-0">{{ records.date_of_birth }}</p>
+								</li>
+								<li class="d-block mt-2">
+									<label class="font-weight-bold m-0">Gender</label>
+									<p class="m-0">{{ records.gender }}</p>
+								</li>
+								<li class="d-block mt-2">
+									<label class="font-weight-bold m-0">Employment Type</label>
+									<p class="m-0">{{ records.employment_type }}</p>
+								</li>
+								<li class="d-block mt-2">
+									<label class="font-weight-bold m-0">Address</label>
+									<p class="m-0">{{ records.address }}</p>
+								</li>
+						</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+	</footer>
+{% endblock %}
